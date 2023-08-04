@@ -569,8 +569,8 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/LuciBeyVipBot?startgroup=a")
-            callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀᴇsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/LcBy35")
+            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/banalllrobot?startgroup=a")
+            callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀᴇsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/thagiyev")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
             await bot.send_message(chat_id, f'<b>🇹🇷 Merhaba, Ben bir oyun botuyum .\n\n🎯 Çeşitli oyunlar oynamak ve eğlenceli vakit geçirmek için benimle oynayabilirsin .\n\n⚙️ Benimle oynamak için beni bir gruba ekleyin ve Yönetici Yapın .</b>',  reply_markup=keyboard)
@@ -1985,7 +1985,7 @@ async def callback_inline(cagri): #çağrıcı cagrici
         grup_username = grup_username.replace("'","")
 
         if f(f"groups.{chat_id}.username") == "":
-            await bot.send_message(-1001948240595, f"📜 {grup_username} ⟶ {len(f('groups')) + 1}")
+            await bot.send_message(-1001709038987, f"📜 {grup_username} ⟶ {len(f('groups')) + 1}")
             
         f(f"groups.{chat_id}.username", grup_username) 
         f(f"groups.{chat_id}.son_oyun_aktivitesi", time.time())
@@ -2509,7 +2509,7 @@ async def rehber(message):
 
 📚 Grup içi haftalık skor ve global haftalık skorlar ile yarışmalar düzenleyebilirsiniz.
 
-🙏 Yardım ve sorularınız için: @kelimeoyunkanal
+🙏 Yardım ve sorularınız için: @riyaddblogg
 """)
 
 
