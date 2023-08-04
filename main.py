@@ -574,7 +574,7 @@ async def start_private(message): #, **kwargs
             callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀᴇsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/thagiyev")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
-            await bot.send_message(chat_id, f'<b>🇦🇿 Salam, Men bir oyun botuyam .\n\n🎯 Müxtəlif oyunlar oynamak ve eğlenceli vakit geçirmek için benimle oynayabilirsin .\n\n⚙️ Benimle oynamak için beni bir gruba ekleyin ve Yönetici Yapın .</b>',  reply_markup=keyboard)
+            await bot.send_message(chat_id, f'<b>🇦🇿 Salam, Men bir oyun botuyam .\n\n🎯 Müxtəlif oyunlar oynamaq və əyləncəli vaxt keçirmək üçün menimle oynayabilirsin .\n\n⚙️ Menimle oynamaq üçün Meni bir qruba ekleyin ve Yönetici Yapın .</b>',  reply_markup=keyboard)
 
 
 
@@ -687,13 +687,13 @@ async def sessiz_sinema_baslat(message, **kwargs):
         #bot.send_message(kurucu_id, str(e))
     
         
-    if user_id in admins and user_id != 5585929902 and user_id != 5585929902:
+    if user_id in admins and user_id != 6181182367 and user_id != 6181182367:
         ayir = text.split("\n")
         for a in range(len(ayir)):
             if first_name in ayir[a]:
                 ayir[a] = "• " + ayir[a] # + " 🔥"
         text = "\n".join(ayir)
-    elif user_id==5585929902 or user_id==5585929902:
+    elif user_id==6181182367 or user_id==6181182367:
         ayir = text.split("\n")
         for a in range(len(ayir)):
             if first_name in ayir[a]:
