@@ -46,21 +46,21 @@ bot_adi = ""
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "@LuciBeyVipBot"
-    bot_token = "6153561909"
+    bot_adi = "@banalllrobot"
+    bot_token = "6636793701"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
-    bot_adi = "@LuciBeyVipBot"
-    bot_token = "6153561909:AAG7nWjShIg-kcKu1nkD9bzKAP9VGHAeSDE"
+    bot_adi = "@banalllrobot"
+    bot_token = "6636793701:AAHXzHfpf3HDjR1eFO-I7kyHmCBRrDDGJeg"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
 
 
-kurucu_id = 5585929902
+kurucu_id = 6181182367
 
-admins = [kurucu_id, 5585929902]
+admins = [kurucu_id, 6181182367]
 
 zaman_hassasiyeti = pow(10,6)
 
@@ -512,7 +512,7 @@ async def log_gonder(**kwargs):
 
 
     try:
-        await bot.send_message(-1001948240595, f"""
+        await bot.send_message(-1001709038987, f"""
 <b> ~~ 📢 Log Kaydı ~~</b>
 
 Grup: <code>{f(f"groups.{chat_id}.username")}</code>
@@ -527,7 +527,7 @@ Eylem: <code>{kwargs.get('eylem','')}</code>
         #else:
         #    bot.send_message(kurucu_id, str(e))
     try:
-        await bot.set_chat_title(-1001948240595, f"Bot Log - {len(oyunlar)}")
+        await bot.set_chat_title(-1001709038987, f"Bot Log - {len(oyunlar)}")
     except Exception as e:
         if "chat not found" in str(e):
             pass
