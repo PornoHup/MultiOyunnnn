@@ -46,19 +46,20 @@ bot_adi = ""
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "@banalllrobot"
-    bot_token = "6636793701"
+    bot_adi = "@MultiSozBot"
+    bot_token = "6563884067"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
-    bot_adi = "@banalllrobot"
-    bot_token = "6636793701:AAHXzHfpf3HDjR1eFO-I7kyHmCBRrDDGJeg"
+    bot_adi = "@multisozbot"
+    bot_token = "6563884067:AAHu2ZhN0mEopjLQkLwhyuHOQQV32WMhtzo"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
 
 
 kurucu_id = 6181182367
+
 
 admins = [kurucu_id, 6181182367]
 
@@ -512,7 +513,7 @@ async def log_gonder(**kwargs):
 
 
     try:
-        await bot.send_message(-1001709038987, f"""
+        await bot.send_message(-1001940766330, f"""
 <b> ~~ 📢 Log Kaydı ~~</b>
 
 Grup: <code>{f(f"groups.{chat_id}.username")}</code>
@@ -569,11 +570,11 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/banalllrobot?startgroup=a")
+            callback_button = types.InlineKeyboardButton(text="🇦🇿 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇦🇿", url="https://t.me/multisozbot?startgroup=a")
             callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀᴇsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/thagiyev")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
-            await bot.send_message(chat_id, f'<b>🇹🇷 Merhaba, Ben bir oyun botuyum .\n\n🎯 Çeşitli oyunlar oynamak ve eğlenceli vakit geçirmek için benimle oynayabilirsin .\n\n⚙️ Benimle oynamak için beni bir gruba ekleyin ve Yönetici Yapın .</b>',  reply_markup=keyboard)
+            await bot.send_message(chat_id, f'<b>🇦🇿 Salam, Men bir oyun botuyam .\n\n🎯 Müxtəlif oyunlar oynamak ve eğlenceli vakit geçirmek için benimle oynayabilirsin .\n\n⚙️ Benimle oynamak için beni bir gruba ekleyin ve Yönetici Yapın .</b>',  reply_markup=keyboard)
 
 
 
